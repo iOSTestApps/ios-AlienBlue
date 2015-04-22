@@ -500,9 +500,20 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 8G9SJKMB6B;
+					};
+				};
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AlienBlue" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* NeuReddit */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -628,6 +639,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -639,6 +651,7 @@
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
 				INFOPLIST_FILE = "AlienBlue-Info.plist";
 				PRODUCT_NAME = AlienBlue;
+				PROVISIONING_PROFILE = "7ee2280d-bb8d-4876-a548-104bec0e896b";
 			};
 			name = Debug;
 		};
@@ -646,6 +659,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Doe Pics Hit Inc";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -655,6 +670,7 @@
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
 				INFOPLIST_FILE = "AlienBlue-Info.plist";
 				PRODUCT_NAME = AlienBlue;
+				PROVISIONING_PROFILE = "7ee2280d-bb8d-4876-a548-104bec0e896b";
 			};
 			name = Release;
 		};
@@ -678,6 +694,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -687,6 +704,7 @@
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
 				INFOPLIST_FILE = "AlienBlue-Info.plist";
 				PRODUCT_NAME = AlienBlue;
+				PROVISIONING_PROFILE = "7ee2280d-bb8d-4876-a548-104bec0e896b";
 			};
 			name = Distribution;
 		};
