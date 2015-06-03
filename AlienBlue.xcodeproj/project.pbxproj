@@ -103,6 +103,8 @@
 		7EE5370C11AC6DFD006FFF12 /* fullscreen-back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE5370B11AC6DFD006FFF12 /* fullscreen-back-button.png */; };
 		7EE5372111AC720E006FFF12 /* right-arrow-dim.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE5372011AC720E006FFF12 /* right-arrow-dim.png */; };
 		7EEDFE4E11ADDA5E008C039B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDFE4D11ADDA5E008C039B /* README */; };
+		E5FB3493311BE33F9A76B84A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DF0467542BEF05ADA8E7A9 /* AssetsLibrary.framework */; };
+		EB2B53FCC1D36170C6C7FD43 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C255B1F473A48756BB85F068 /* BuddyBuildSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +180,7 @@
 		47E1C5A21189520E00B65F7E /* video-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "video-icon.png"; path = "Images/video-icon.png"; sourceTree = "<group>"; };
 		47E1C5A31189520E00B65F7E /* image-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "image-icon.png"; path = "Images/image-icon.png"; sourceTree = "<group>"; };
 		47E1C5A41189520E00B65F7E /* article-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "article-icon.png"; path = "Images/article-icon.png"; sourceTree = "<group>"; };
+		49DF0467542BEF05ADA8E7A9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		7E03F0351193D028008D3917 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7E130DAB11919CCB00FB7009 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
 		7E130DAC11919CCB00FB7009 /* Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resources.m; sourceTree = "<group>"; };
@@ -230,6 +233,7 @@
 		7EE5372011AC720E006FFF12 /* right-arrow-dim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right-arrow-dim.png"; path = "Images/right-arrow-dim.png"; sourceTree = "<group>"; };
 		7EEDFE4D11ADDA5E008C039B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* AlienBlue-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AlienBlue-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C255B1F473A48756BB85F068 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +246,8 @@
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
 				7E92703111888A7F00FC2037 /* StoreKit.framework in Frameworks */,
 				7EDF4D45118D464B005A7435 /* SystemConfiguration.framework in Frameworks */,
+				EB2B53FCC1D36170C6C7FD43 /* BuddyBuildSDK.framework in Frameworks */,
+				E5FB3493311BE33F9A76B84A /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,8 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				C255B1F473A48756BB85F068 /* BuddyBuildSDK.framework */,
+				49DF0467542BEF05ADA8E7A9 /* AssetsLibrary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -644,6 +652,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -665,6 +674,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
@@ -699,6 +709,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
