@@ -64,6 +64,7 @@
 		47E1C5A51189520E00B65F7E /* video-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E1C5A21189520E00B65F7E /* video-icon.png */; };
 		47E1C5A61189520E00B65F7E /* image-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E1C5A31189520E00B65F7E /* image-icon.png */; };
 		47E1C5A71189520E00B65F7E /* article-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E1C5A41189520E00B65F7E /* article-icon.png */; };
+		512EE4990154BA1CB52E8957 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151094ED53250C98BDDE3C7B /* AssetsLibrary.framework */; };
 		7E03F0361193D028008D3917 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E03F0351193D028008D3917 /* Icon.png */; };
 		7E130DAD11919CCB00FB7009 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E130DAC11919CCB00FB7009 /* Resources.m */; };
 		7E130E631191A78800FB7009 /* button-background-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E130E621191A78800FB7009 /* button-background-dark.png */; };
@@ -103,9 +104,11 @@
 		7EE5370C11AC6DFD006FFF12 /* fullscreen-back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE5370B11AC6DFD006FFF12 /* fullscreen-back-button.png */; };
 		7EE5372111AC720E006FFF12 /* right-arrow-dim.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE5372011AC720E006FFF12 /* right-arrow-dim.png */; };
 		7EEDFE4E11ADDA5E008C039B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDFE4D11ADDA5E008C039B /* README */; };
+		B9187891F1F61AEA71E29E7E /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEB37D9D12AE5F424910C5B /* BuddyBuildSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151094ED53250C98BDDE3C7B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AlienBlueAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlienBlueAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AlienBlueAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlienBlueAppDelegate.m; sourceTree = "<group>"; };
@@ -178,6 +181,7 @@
 		47E1C5A21189520E00B65F7E /* video-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "video-icon.png"; path = "Images/video-icon.png"; sourceTree = "<group>"; };
 		47E1C5A31189520E00B65F7E /* image-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "image-icon.png"; path = "Images/image-icon.png"; sourceTree = "<group>"; };
 		47E1C5A41189520E00B65F7E /* article-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "article-icon.png"; path = "Images/article-icon.png"; sourceTree = "<group>"; };
+		5FEB37D9D12AE5F424910C5B /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		7E03F0351193D028008D3917 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7E130DAB11919CCB00FB7009 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
 		7E130DAC11919CCB00FB7009 /* Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resources.m; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
 				7E92703111888A7F00FC2037 /* StoreKit.framework in Frameworks */,
 				7EDF4D45118D464B005A7435 /* SystemConfiguration.framework in Frameworks */,
+				B9187891F1F61AEA71E29E7E /* BuddyBuildSDK.framework in Frameworks */,
+				512EE4990154BA1CB52E8957 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,8 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				5FEB37D9D12AE5F424910C5B /* BuddyBuildSDK.framework */,
+				151094ED53250C98BDDE3C7B /* AssetsLibrary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -644,6 +652,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -665,6 +674,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
@@ -699,6 +709,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;

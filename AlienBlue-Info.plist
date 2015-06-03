@@ -32,5 +32,14 @@
 	<false/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleBlackOpaque</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>bb-buddybuild.com.designshed.alienblue</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
