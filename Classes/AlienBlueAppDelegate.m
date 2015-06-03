@@ -9,6 +9,7 @@
 #import "AlienBlueAppDelegate.h"
 #import "MessagesTableViewController.h"
 #import "SettingsTableViewController.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation AlienBlueAppDelegate
 
@@ -109,6 +110,8 @@
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+	[BuddyBuildSDK setup:self];
+	
 
 	errorImage = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"no-internet-connection.png"] retain]];
 		
@@ -227,6 +230,16 @@
 }
 
 
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+	if ([BuddyBuildSDK handleOpenURL:url]) {
+		return YES;
+	}
+	return NO;
+}
 
 @end
 

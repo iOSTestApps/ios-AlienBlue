@@ -64,6 +64,7 @@
 		47E1C5A51189520E00B65F7E /* video-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E1C5A21189520E00B65F7E /* video-icon.png */; };
 		47E1C5A61189520E00B65F7E /* image-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E1C5A31189520E00B65F7E /* image-icon.png */; };
 		47E1C5A71189520E00B65F7E /* article-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E1C5A41189520E00B65F7E /* article-icon.png */; };
+		616C5E020078E569F739C6E8 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2374987CC45E85A501DD21 /* BuddyBuildSDK.framework */; };
 		7E03F0361193D028008D3917 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E03F0351193D028008D3917 /* Icon.png */; };
 		7E130DAD11919CCB00FB7009 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E130DAC11919CCB00FB7009 /* Resources.m */; };
 		7E130E631191A78800FB7009 /* button-background-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E130E621191A78800FB7009 /* button-background-dark.png */; };
@@ -103,14 +104,17 @@
 		7EE5370C11AC6DFD006FFF12 /* fullscreen-back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE5370B11AC6DFD006FFF12 /* fullscreen-back-button.png */; };
 		7EE5372111AC720E006FFF12 /* right-arrow-dim.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE5372011AC720E006FFF12 /* right-arrow-dim.png */; };
 		7EEDFE4E11ADDA5E008C039B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7EEDFE4D11ADDA5E008C039B /* README */; };
+		AEC946D3D9AC8E22798C7116 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8B17FBF4EE71F7681795C4 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A8B17FBF4EE71F7681795C4 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AlienBlueAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlienBlueAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AlienBlueAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlienBlueAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* AlienBlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlienBlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1E2374987CC45E85A501DD21 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		28216C950DB411BC00E5133A /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
 		28216C960DB411BC00E5133A /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
 		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -242,6 +246,8 @@
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
 				7E92703111888A7F00FC2037 /* StoreKit.framework in Frameworks */,
 				7EDF4D45118D464B005A7435 /* SystemConfiguration.framework in Frameworks */,
+				616C5E020078E569F739C6E8 /* BuddyBuildSDK.framework in Frameworks */,
+				AEC946D3D9AC8E22798C7116 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,8 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				1E2374987CC45E85A501DD21 /* BuddyBuildSDK.framework */,
+				1A8B17FBF4EE71F7681795C4 /* AssetsLibrary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -644,6 +652,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -665,6 +674,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
@@ -699,6 +709,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
