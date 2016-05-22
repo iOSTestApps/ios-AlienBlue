@@ -503,7 +503,7 @@
 			attributes = {
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 8G9SJKMB6B;
+						DevelopmentTeam = L4FET847JL;
 					};
 				};
 			};
@@ -639,7 +639,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Siddhartha Balasubramanian (Z2B29KW6S6)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -651,7 +652,7 @@
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
 				INFOPLIST_FILE = "AlienBlue-Info.plist";
 				PRODUCT_NAME = AlienBlue;
-				PROVISIONING_PROFILE = "7ee2280d-bb8d-4876-a548-104bec0e896b";
+				PROVISIONING_PROFILE = "01f41bc9-42bc-47c8-83f9-21c18855bb81";
 			};
 			name = Debug;
 		};
@@ -659,8 +660,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Doe Pics Hit Inc";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Siddhartha Balasubramanian (Z2B29KW6S6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Siddhartha Balasubramanian (Z2B29KW6S6)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,7 +672,7 @@
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
 				INFOPLIST_FILE = "AlienBlue-Info.plist";
 				PRODUCT_NAME = AlienBlue;
-				PROVISIONING_PROFILE = "7ee2280d-bb8d-4876-a548-104bec0e896b";
+				PROVISIONING_PROFILE = "01f41bc9-42bc-47c8-83f9-21c18855bb81";
 			};
 			name = Release;
 		};
@@ -694,7 +696,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Doe Pics Hit Inc";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Siddhartha Balasubramanian (Z2B29KW6S6)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -704,7 +707,7 @@
 				GCC_PREFIX_HEADER = AlienBlue_Prefix.pch;
 				INFOPLIST_FILE = "AlienBlue-Info.plist";
 				PRODUCT_NAME = AlienBlue;
-				PROVISIONING_PROFILE = "7ee2280d-bb8d-4876-a548-104bec0e896b";
+				PROVISIONING_PROFILE = "01f41bc9-42bc-47c8-83f9-21c18855bb81";
 			};
 			name = Distribution;
 		};
